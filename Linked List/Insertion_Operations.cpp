@@ -65,6 +65,12 @@ void InsertBeginning(){
     cin>>x;
 
     node* temp;
+    temp=new node;
+    temp->data=x;
+    temp->next=head;
+    head=temp;
+    
+    /*node* temp;
     temp= new node;
     temp->data=x;
     temp->next=NULL;
@@ -76,7 +82,7 @@ void InsertBeginning(){
     else if(head->next!=NULL){
         temp->next=head->next;
         head->next=temp;
-    }
+    }*/
 }
 
 void InsertEnd(){
